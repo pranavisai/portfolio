@@ -1,0 +1,133 @@
+:root {
+      --lavender: #e6e6fa;
+      --accent: #ba9fe3;
+      --text: #333;
+      --white: #fff;
+      --bubble: #f7f0ff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--lavender);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+          header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 600px; 
+    margin: 2rem auto; 
+    padding: 0 1rem;
+  }
+  header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  header h1, header p {
+    margin: 0;
+  }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    nav {
+      background: var(--white);
+      text-align: center;
+      padding: 0.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: #5f4b8b;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    ul li::before {
+      content: "✨";
+      margin-right: 0.5rem;
+    }
+
+    .bubble {
+      background: var(--bubble);
+      border-radius: 20px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .single-section {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .two-column-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .two-column-section {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header img {
+        width: 100px;
+        height: 100px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 0.5rem;
+      }
+    }
+
+    a {
+      color: #5f4b8b;
+      text-decoration: underline;
+    }
+
+    p {
+      color: #5f4b8b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: var(--accent);
+      color: var(--white);
+      border-radius: 50% 50% 0 0;
+    }
