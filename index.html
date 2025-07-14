@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sai Pranavi Kasichainula | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --lavender: #e6e6fa;
+      --accent: #ba9fe3;
+      --text: #333;
+      --white: #fff;
+      --bubble: #f7f0ff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--lavender);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+          header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 600px; 
+    margin: 2rem auto; 
+    padding: 0 1rem;
+  }
+  header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  header h1, header p {
+    margin: 0;
+  }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    nav {
+      background: var(--white);
+      text-align: center;
+      padding: 0.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: #5f4b8b;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    ul li::before {
+      content: "✨";
+      margin-right: 0.5rem;
+    }
+
+    .bubble {
+      background: var(--bubble);
+      border-radius: 20px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .single-section {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .two-column-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .two-column-section {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header img {
+        width: 100px;
+        height: 100px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 0.5rem;
+      }
+    }
+
+    a {
+      color: #5f4b8b;
+      text-decoration: underline;
+    }
+
+    p {
+      color: #5f4b8b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: var(--accent);
+      color: var(--white);
+      border-radius: 50% 50% 0 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="pranavi.jpeg" alt="Sai Pranavi Kasichainula profile picture" />
+  <div>
+    <h1>Sai Pranavi Kasichainula</h1>
+    <p>👩‍💻 Full-Stack Developer | Femtec Scholar | M.Sc. Distributed Systems</p>
+  </div>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+  <section id="about" class="single-section bubble">
+    <h2>About Me</h2>
+    <p>I’m an efficiency-focused software engineer with experience in backend, automation, and full-stack development. Passionate about simplifying complex workflows, building clean software, and making things... well, a little more bubbly 💫</p>
+  </section>
+
+  <div class="two-column-section">
+    <section id="experience" class="bubble">
+      <h2>Experience</h2>
+      <div class="bubble">
+    <h3>💼 Tekscend Photomasks – Master Thesis Student</h3>
+    <p><em>Aug 2024 – Jan 2025</em></p>
+    <ul>
+      <li>Built a Django REST Framework web application to unify fragmented order entry workflows.</li>
+      <li>Automated a sample customer’s order process, reducing manual effort by 99.38% for single files and 99.12% for batches.</li>
+      <li>Created comprehensive SRS documentation and led knowledge transfer sessions.</li>
+    </ul>
+  </div>
+
+  <div class="bubble">
+    <h3>💼 Tekscend Photomasks – Working Student</h3>
+    <p><em>Apr 2023 – Jul 2024</em></p>
+    <ul>
+      <li>Migrated 90% of RedHat Perl scripts to CentOS7 through shell script automation.</li>
+      <li>Debugged and enhanced legacy internal VBA tools for greater system reliability.</li>
+    </ul>
+  </div>
+
+  <div class="bubble">
+    <h3>💼 Elevait, Germany – Working Student</h3>
+    <p><em>Mar 2022 – Mar 2023</em></p>
+    <ul>
+      <li>Designed and maintained process workflows using Apache NiFi for automation tasks.</li>
+      <li>Documented REST APIs using OpenAPI for consistent integration and collaboration.</li>
+    </ul>
+  </div>
+
+  <div class="bubble">
+    <h3>💼 Infosys Ltd. – Systems Engineer</h3>
+    <p><em>Oct 2019 – Sep 2021</em></p>
+    <ul>
+      <li>Completed 4-month training in Java, React, SQL, and Python.</li>
+      <li>Worked as a contractor for Apple Inc., resolving 30+ frontend bugs in Apple Store India.</li>
+      <li>Provided on-call support during high-traffic product launches with <1% downtime.</li>
+      <li>Supported internal tools used by Apple Store managers, improving usability and reducing support tickets.</li>
+    </ul>
+  </div>
+    </section>
+
+    <section id="projects" class="bubble">
+      <h2>Projects and Certifications</h2>
+      <div class="bubble">
+    <h3>📌 Thesis: Generic Automation Order Entry Framework (GAOEF)</h3>
+    <p><strong>Company:</strong> Tekscend Photomasks</p>
+    <ul>
+      <li>Designed a modular web-based framework using Django REST Framework to automate order processing.</li>
+      <li>Integrated multiple isolated workflows into one system to streamline customer onboarding.</li>
+      <li>Delivered end-to-end architecture, SRS documentation, data modeling, and technical handover.</li>
+    </ul>
+  </div>
+
+  <div class="bubble">
+    <h3>📊 Power BI Dashboard – Leakage Test Analysis</h3>
+    <p><strong>In collaboration with:</strong> P&G Innovation Lab (Femtec Summer School)</p>
+    <ul>
+      <li>Led SQL-based data extraction from P&G's Data Lake for leakage testing insights.</li>
+      <li>Built interactive Power BI dashboards to visualize test parameters and product anomalies.</li>
+      <li>Presented final results to engineers at P&G's Marktheidenfeld facility.</li>
+    </ul>
+  </div>
+
+  <div class="bubble">
+    <h3>🌐 Full Stack Projects (Self-led via Udemy)</h3>
+    <ul>
+      <li>Built full-stack applications with:
+        <ul>
+          <li><strong>Frontend:</strong> React.js, HTML5, CSS3, JavaScript ES6</li>
+          <li><strong>Backend:</strong> Django (Python), Express (Node.js)</li>
+          <li><strong>Database:</strong> PostgreSQL, SQLite3</li>
+        </ul>
+      </li>
+      <li>Practiced secure login (OAuth), RESTful APIs, responsive design, and GitHub version control.</li>
+    </ul>
+  </div>
+
+    <div class="bubble">
+        <h3>📚 Certifications</h3>
+      <ul>
+        <li>Udemy – Django Full Stack</li>
+        <li>Udemy – MERN Bootcamp</li>
+        <li>Google – Digital Marketing</li>
+      </ul>
+    </div>
+    </section>
+  </div>
+
+  <div class="two-column-section">
+    <section id="education" class="bubble">
+        <h2> Education</h2>
+      <div class="bubble">
+    <h3>🎓 Technische Universität Dresden, Germany</h3>
+    <p><strong>Master of Science:</strong> Distributed Systems Engineering (Oct 2021 – Mar 2025)</p>
+    <ul>
+      <li>Final Grade: 2.3 / 5.0 (German “Good” scale)</li>
+      <li>Thesis on Generic Automation Order Entry Framework</li>
+      <li>Active Member of Study & Exam Board, DSE Faculty</li>
+    </ul>
+  </div>
+
+  <div class="bubble">
+    <h3>🎓 SRM Institute of Science & Technology, Chennai</h3>
+    <p><strong>Bachelor of Technology:</strong> Information Technology (Jul 2015 – Jul 2019)</p>
+    <ul>
+      <li>CGPA: 8.51 / 10.0 – First Class with Distinction</li>
+      <li>Major Project: Big Data Deduplication in Cloud Storage Systems</li>
+    </ul>
+  </div>
+    </section>
+
+    <section id="skills" class="bubble">
+      <h2>Skills</h2>
+      <div class="bubble">
+    <h3>🛠️ Programming Languages</h3>
+    <ul>
+      <li>Python, Java, SQL, JavaScript, Shell</li>
+    </ul>
+  </div>
+
+  <div class="bubble">
+    <h3>💻 Frameworks & Libraries</h3>
+    <ul>
+      <li> Django REST Framework, React.js, Express.js, Bootstrap</li>
+    </ul>
+  </div>
+
+  <div class="bubble">
+    <h3>📊 Tools & Platforms</h3>
+    <ul>
+      <li>Apache NiFi, Power BI, Git, GitHub, VS Code, Linux OS, JIRA</li>
+      <li>Data Modeling Tools: STARUML, PlantUML</li>
+    </ul>
+  </div>
+
+      <h3>🗣️ Languages Spoken</h3>
+      <ul>
+        <li>English (C1), German (B1), Hindi (C2), Telugu (C2)</li>
+      </ul>
+    </section>
+  </div>
+
+  <section id="contact" class="single-section bubble">
+    <h2>Let’s Connect!</h2>
+    <p>Email: <a href="mailto:saipranavi1994@gmail.com">saipranavi1994@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/pranavi-sai/" target="_blank">linkedin.com/in/pranavi-sai</a></p>
+    <p>GitHub: <a href="https://github.com/pranavisai" target="_blank">github.com/pranavisai</a></p>
+  </section>
+</main>
+
+<footer>
+  Made with 💜 by Pranavi. All Rights Reserved.
+</footer>
+
+</body>
+</html>
